@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "nexus_fence",
+	"version": "${version}",
+	"name": "nexus_fence",
+	"description": "This is an fence block using in Nexus City by ArcaneEmperor",
+	"authors": [
+		"ArcaneEmperor"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nexus_fence/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "pl.ekblocks.NexusFence"
+		],
+		"client": [
+			"pl.ekblocks.NexusFenceClient"
+		],
+		"fabric-datagen": [
+			"pl.ekblocks.NexusFenceDataGenerator"
+		]
+	},
+	"mixins": [
+		"nexus_fence.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
